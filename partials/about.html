@@ -1,0 +1,63 @@
+<div id="about-page">
+	<div class="video-container">
+	<iframe src="//player.vimeo.com/video/90280777?title=0&amp;byline=0&amp;portrait=0" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<!-- <video width="100%" height="" controls >
+		  <source src="img/highlight-reel.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video> -->
+	</div>
+
+	<div class="main-text">
+		<h2>about us</h2>
+		<p>PTALA is the in-house marketing arm of a large real estate investment firm and specializes in the marketing of brands within our iconic venues nationwide, including Washington DC’s nationally renowned Union Station, Faneuil Hall in the heart of downtown Boston, Beverly Connection retail center in Los Angeles, Harborplace lifestyle center and mall in Baltimore’s inner harbor, San Antonio’s unique Rivercenter mall on the famous Riverwalk, and The Bravern, in Seattle's highly sought after Bellevue neighborhood where the advertising opportunities are second to none. </p>
+		<p>With a current reach in excess of one hundred million people per year, PTALA offers one of a kind experiences to any advertiser looking to truly dominate in any of our markets, whether it be through creating an out-of-home execution, complete takeover of one of our properties, one-of-a-kind experiential event, pop-up store, in-window execution on premises, interactive displays, stunts or prop display, sponsorship/naming rights campaigns, and even the production of large-scale events such as Earth Month 2013 in Union Station.</p>
+	<p>Please don't hesitate to contact <a href="mailto:bappel@ptala.com">Byron Appel</a> for any of your OOH Advertising or Experiential Sponsorship needs.</p>
+		<a class="learn-more" href='#contact'>contact us <img src="img/link_arrow.svg" /></a>
+
+	</div>
+	<div class="services">
+		<h2>boundless opportunities</h2>
+		<div class="services-container">
+			<div class="keys">
+				<div  class="service" ng-class="{open: isCurrentOpenService($index)}" ng-click="openService($index)" ng-repeat="service in services">
+					<img class="svg original" src="img/about-services/{{ service.img }}.svg" />
+					<img class="svg hover" src="img/about-services/{{ service.img }}_icon_hover.svg" />
+					<p class="title">{{ service.title }}</p>
+				</div>	
+			</div>
+	<!--		<div class="values">
+				<div class="service-value" ng-if="isCurrentOpenService($index)" ng-repeat="service in services">
+					<p class="title">{{ service.title }}</p>
+					<p class="text">{{ service.text }}</p>
+				</div>	
+			</div> -->
+		</div>
+	</div>
+
+	<p ng-click="openIconicVenues()" class="openClients iv"><span><img src="img/down_arrow.svg"> explore our iconic venues</span></p>
+	<div class="iconic-venues">
+		<div class="venues" ng-show="currentVenueSlideIndex == -2">
+			<div class="venue" ng-click="openVenueSlide($index);"  style="{{ venueHeight() }}" ng-repeat="venue in venues">
+				<div class="text">
+					<p class="title">{{ venue.title }}</p>
+					<p class="location">{{ venue.location }}</p>
+				</div>
+				<div class="overlay"></div>
+				<img src="img/iconic-venues/{{ venue.image }}" />
+			</div>
+		</div>
+		<div style="{{ largeVenueHeight() }}" class="venues-large">
+			<div class="venue-large" ng-repeat="venue in venues" ng-if="isCurrentVenueSlideIndex($index)">
+				<div class="text">
+					<p class="title">{{ venue.title }}</p>
+					<p class="location">{{ venue.location }}</p>
+					<p class="description"><img ng-click="openVenueSlide($index-1)" src="img/back_arrow.svg" />{{ venue.text }}<img ng-click="openVenueSlide($index+1)" class="fwd" src="img/forward_arrow.svg" /></p>
+					<img src="img/close.png" class="close" ng-click="openVenueSlide(-2)" />
+				</div>
+				<div class="overlay"></div>
+				<img src="img/iconic-venues/{{ venue.image }}" />
+			</div>
+		</div>	
+	</div>
+</div>	
+

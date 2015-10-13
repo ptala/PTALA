@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="40px" viewBox="0 0 21 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>back_arrow_lg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-235.000000, -2446.000000)" id="Venue-Detail-View" fill-opacity="0.6" fill="#FFFFFF">
+            <g sketch:type="MSLayerGroup" transform="translate(0.000000, 1986.000000)">
+                <g id="Forward-and-Back" transform="translate(235.000000, 460.000000)" sketch:type="MSShapeGroup">
+                    <path d="M0.00837866405,20.0064222 C-0.069343281,20.4559683 0.0655470416,20.9352554 0.413691316,21.2833997 L18.5320926,39.4018009 C19.0999566,39.9696649 20.0161984,39.9741125 20.5874093,39.4029015 C21.1546654,38.8356454 21.155232,37.9165081 20.5863087,37.3475848 L3.24206176,20.0033379 L20.5863087,2.659091 C21.1541726,2.09122704 21.1586202,1.17498522 20.5874093,0.603774303 C20.0201532,0.0365181934 19.1010159,0.0359516282 18.5320926,0.604874909 L0.413691316,18.7232762 C0.0640851906,19.0728823 -0.0719712489,19.5545328 0.00837866406,20.0064222 Z" id="back_arrow_lg"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

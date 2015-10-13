@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>down_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home" sketch:type="MSArtboardGroup" transform="translate(-690.000000, -794.000000)" fill="#DF0000">
+            <g id="SCROLL-FOR-MORE-+-Rectangle-19" sketch:type="MSLayerGroup" transform="translate(690.000000, 792.000000)">
+                <path d="M3.32219855,6.26659398 C3.30807645,6.41272051 3.35784872,6.5649555 3.47128933,6.67839611 L9.82160389,13.0287107 C10.0206344,13.2277412 10.3459823,13.2250855 10.5355339,13.0355339 C10.7307961,12.8402718 10.7281125,12.5210057 10.5287107,12.3216039 L4.50165653,6.29454975 L10.5287107,0.267495616 C10.7277412,0.0684651005 10.7250855,-0.256882829 10.5355339,-0.446434402 C10.3402718,-0.641696548 10.0210057,-0.639012963 9.82160389,-0.439611165 L3.47128933,5.91070339 C3.37295596,6.00903677 3.3238536,6.13820385 3.32219855,6.26659398 Z" id="down_arrow" sketch:type="MSShapeGroup" transform="translate(7.000000, 6.293401) rotate(-90.000000) translate(-7.000000, -6.293401) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

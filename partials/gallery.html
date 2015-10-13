@@ -1,0 +1,16 @@
+<div id="gallery">
+	<h1>Our Work</h1>
+	<div class="featured">
+		<img ng-src="{{ originalPhotos[featuredIndex].url}}" />
+	</div>
+		
+	<div class="divider"></div>
+	<div class="tags">
+		<p ng-click='openTag(tag)' class="tag" ng-repeat="tag in tags" ng-class="{selected: selected == tag}">
+			{{ tag }} 
+		</p>
+	</div>
+	<div class="photos">
+		<img ng-click="openLightboxModal($index)" ng-repeat="photo in photos" ng-src="{{ photo.url}}" />
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="76px" viewBox="0 0 1440 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>mini_nav_bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PTALA-Homepage" sketch:type="MSArtboardGroup" fill-opacity="0.9" fill="#38291F">
+            <g id="nav_scrolled" sketch:type="MSLayerGroup">
+                <path d="M658.797209,40 L0,40 L0,0 L1440,0 L1440,40 L781.202791,40 C769.248194,61.473282 746.320545,76 720,76 C693.679455,76 670.751806,61.473282 658.797209,40 Z" id="mini_nav_bg" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
