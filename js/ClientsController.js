@@ -4,14 +4,14 @@ angular.module('ptala')
 
 	$scope.clients = [
 	{
-		img: "qualcomm",
-		name:"Qualcomm",
-		videoid:"138404677"
-	},
-	{
 		img: "prudentialfinancial",
 		name:"Prudential Financial",
 		videoid:"139225422"
+	},
+	{
+		img: "qualcomm",
+		name:"Qualcomm",
+		videoid:"138404677"
 	},
 	{
 		img: "smartcars",
