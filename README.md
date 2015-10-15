@@ -24,9 +24,10 @@
 > Scale the image down to an appropriate size to fit on the Client page along with all the other logos.  
 > Export the scaled down image as SVG.  
 > Copy the resulting SVG to img/client-logos folder in the repo.  
-> We need two copies of the SVG, named as <clientname>_default.svg and <clientname>_hover.svg where <clientname> must be replaced with the actual client name in lowercase, no spaces or underscores in the <clientname>  
+> We need two copies of the SVG, named as clientname_default.svg and clientname_hover.svg where clientname must be replaced with the actual client name in lowercase, no spaces or underscores in the clientname  
 > For example, qualcomm_default.svg and qualcomm_hover.svg  
-> Edit the <clientname>_default.svg file to make the image grayscale.  
+> Edit the clientname_default.svg file to make the image grayscale.  
+> The clientname_hover.svg file must NOT be edited at all - it must still show the color logo.  
 > To make the image grayscale, replace the fill statements with  fill="#F3F1EF" except where fill="#FFFFFF"  
 
 > http://www.imagemagick.org/Usage/draw/#svg  
