@@ -9,6 +9,21 @@ angular.module('ptala')
 		videoid:"138404677"
 	},
 	{
+		img: "cvs",
+		name:"CVS Health",
+		videoid:"127095096"
+	},
+	{
+		img: "nordstrom",
+		name:"Nordstrom",
+		videoid:"141869324"
+	},
+	{
+		img: "cambria",
+		name:"Cambria",
+		videoid:"126493347"
+	},
+	{
 		img: "prudentialfinancial",
 		name:"Prudential Financial",
 		videoid:"139225422"
