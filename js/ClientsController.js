@@ -4,6 +4,11 @@ angular.module('ptala')
 
 	$scope.clients = [
 	{
+		img: "cambria",
+		name:"Cambria",
+		videoid:"126493347"
+	},
+	{
 		img: "nordstrom",
 		name:"Nordstrom",
 		videoid:"141869324"
@@ -17,11 +22,6 @@ angular.module('ptala')
 		img: "cvs",
 		name:"CVS Health",
 		videoid:"127095096"
-	},
-	{
-		img: "cambria",
-		name:"Cambria",
-		videoid:"126493347"
 	},
 	{
 		img: "qualcomm",
