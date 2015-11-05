@@ -12,18 +12,26 @@
       <span><img src="img/down_arrow.svg"> click through our clients below</span>
     </p>
   </div>
-  <div class="filter">
-  </div>
-  <div class="filter">
-    <a ng-click="filters.category = 'Experiential Activations'">Experiential Activations</a>
+  <div class="filter" ng-controller="OOHClientsController">
     <a ng-click="filters.category = 'OOH / Billboard Campaigns'">OOH / Billboard Campaigns</a>
+    <div class="logos">
+      <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" ng-click="changeOpenClientTo($index)" ng-repeat="client in clients | filter:filters">
+        <img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img }}" />
+        <img ng-if="client.img != 'ravens.jpeg'" class="hover" src="img/client-logos/{{ client.img }}_default.svg" />
+        <img ng-if="client.img != 'ravens.jpeg'" class="default" src="img/client-logos/{{ client.img }}_hover.svg" />
+        <!-- <a ng-click="filters.category = client.category">{{client.category}}</a> -->
+      </div>
+    </div>
   </div>
-  <div class="logos">
-    <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" ng-click="changeOpenClientTo($index)" ng-repeat="client in clients | filter:filters">
-      <img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img }}" />
-      <img ng-if="client.img != 'ravens.jpeg'" class="hover" src="img/client-logos/{{ client.img }}_default.svg" />
-      <img ng-if="client.img != 'ravens.jpeg'" class="default" src="img/client-logos/{{ client.img }}_hover.svg" />
-      <!-- <a ng-click="filters.category = client.category">{{client.category}}</a> -->
+  <div class="filter" ng-controller="ClientsController">
+    <a ng-click="filters.category = 'Experiential Activations'">Experiential Activations</a>
+    <div class="logos">
+      <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" ng-click="changeOpenClientTo($index)" ng-repeat="client in clients | filter:filters">
+        <img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img }}" />
+        <img ng-if="client.img != 'ravens.jpeg'" class="hover" src="img/client-logos/{{ client.img }}_default.svg" />
+        <img ng-if="client.img != 'ravens.jpeg'" class="default" src="img/client-logos/{{ client.img }}_hover.svg" />
+        <!-- <a ng-click="filters.category = client.category">{{client.category}}</a> -->
+      </div>
     </div>
   </div>
 

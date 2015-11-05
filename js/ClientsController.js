@@ -12,6 +12,52 @@ angular.module('ptala')
                 sequence: 1
 	},
 	{
+		img: "todayshow",
+		name:"The Today Show",
+		videoid:"61678699",
+                category: "OOH / Billboard Campaigns",
+                sequence: 1
+	},
+	{
+		img: "cvs",
+		name:"CVS Health",
+		videoid:"127095096",
+                category: "Experiential Activations",
+                sequence: 1
+	},
+	{
+		img: "tropicana",
+		name:"Tropicana",
+		videoid:"59112441",
+                category: "Experiential Activations",
+                sequence: 1
+	}
+	]
+
+	$scope.openClient = 0;
+	$scope.changeOpenClientTo = function(index) {
+		$('.hide').removeClass('hide');
+		$scope.openClient = index;
+		$("html, body").animate({ scrollTop: 0 + 'px' });
+	
+		
+	};
+	
+	$scope.getVimeoSource = function() {
+		return	$sce.trustAsResourceUrl("http://player.vimeo.com/video/" + $scope.clients[$scope.openClient].videoid  + "?title=0&amp;byline=0&amp;portrait=0");
+	};
+
+	$scope.openClients = function() {
+		$("html, body").animate({ scrollTop: $('.logos').position().top + 'px' });
+	};
+});
+
+angular.module('ptala')
+.controller('OOHClientsController', function OOHClientsController($scope, $rootScope,$sce) {
+  $scope.filters = { };
+
+	$scope.clients = [
+	{
 		img: "nordstrom",
 		name:"Nordstrom",
 		videoid:"141869324",
@@ -23,13 +69,6 @@ angular.module('ptala')
 		name:"Biogen",
 		videoid:"124529350",
                 category: "OOH / Billboard Campaigns",
-                sequence: 1
-	},
-	{
-		img: "cvs",
-		name:"CVS Health",
-		videoid:"127095096",
-                category: "Experiential Activations",
                 sequence: 1
 	},
 	{
@@ -58,13 +97,6 @@ angular.module('ptala')
 		name:"D.C. Lottery",
 		videoid:"86116915",
                 category: "OOH / Billboard Campaigns",
-                sequence: 1
-	},
-	{
-		img: "tropicana",
-		name:"Tropicana",
-		videoid:"59112441",
-                category: "Experiential Activations",
                 sequence: 1
 	},
 	{

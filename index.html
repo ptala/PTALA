@@ -1,126 +1,138 @@
 <!DOCTYPE html>
 <html data-framework="angular-js">
 <head>
-	<link rel="stylesheet" href="css/main.css" />
-	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,,300,400' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="js/lightbox/angular-bootstrap-lightbox.min.css">
-<link rel="stylesheet" href="js/lightbox/loading-bar.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="js/lightbox/angular-bootstrap-lightbox.min.css">
+  <link rel="stylesheet" href="js/lightbox/loading-bar.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
 
 <body ng-controller="AppController" ng-app="ptala" scroll-position="scroll">
-		<header ng-class="{mini:miniTime()}">
-			<ul id="main-nav" ng-class="{ mini: miniTime()}">
-				<li><a href='#about'>about</a></li> 
-				<li><a href='#clients'>clients</a></li> 
-				<li class="nav-logo"><a href='#'>
-					<div class='mini-circle' ng-show="miniTime()"></div>
-					<img ng-show="miniTime()" class="mini" ng-src="{{ miniLogoSrc }}" />
-					<img ng-hide="miniTime()" class="large" ng-src="{{ largeLogoSrc }}" />
-					</a>
-				</li> 
-				<li><a href='#gallery'>gallery</a></li> 
-				<li><a href='#contact'>contact</a></li> 
-			</ul>
-		</header>
-	<div id="main-content" autoscroll="true" ng-view></div>
-	<footer id="footer">
-		<div class="border">
-			<div class="content">
-				<ul class="left-links">
-					<li><a href='#about'>about</a></li>
-					<li> <a href='#clients'>clients</a></li>
-					<li> <a  href='#gallery'>gallery</a></li>
-					<li> <a  href='#contact'>contact</a></li>
-				</ul>
-				<ul class="right-links">
-					<li><a href="https://twitter.com/PTALA_" target="_blank"><img src="img/twitter.svg" /></a></li>
-					<li><a href="http://vimeo.com/ptala" target="_blank"><img src="img/vimeo.svg" /></a></li>
-					<li><a href="http://ptalamedia.tumblr.com/" target="_blank"><img src="img/tumblr.svg" /></a></li>
-					<li><a href="http://instagram.com/ptala_" target="_blank"><img src="img/instagram.svg" /></a></li>
-					<li><a href="https://www.facebook.com/AACRealty" target="_blank"><img src="img/facebook.svg" /></a></li>
-			</div>
-		</div>		
-		<img class="logo" src="img/footer_logo.png" />
-		<p id="copyright">&copy; copyright 2014 ptala</p>
-	</footer>
+  <header ng-class="{mini:miniTime()}">
+    <ul id="main-nav" ng-class="{ mini: miniTime()}">
+      <li><a href='#about'>about</a></li> 
+      <li><a href='#clients'>clients</a></li> 
+      <li class="nav-logo">
+        <a href='#'>
+          <div class='mini-circle' ng-show="miniTime()">
+          </div>
+          <img ng-show="miniTime()" class="mini" ng-src="{{ miniLogoSrc }}" />
+	  <img ng-hide="miniTime()" class="large" ng-src="{{ largeLogoSrc }}" />
+	</a>
+      </li> 
+      <li><a href='#gallery'>gallery</a></li> 
+      <li><a href='#contact'>contact</a></li> 
+    </ul>
+  </header>
+  <div id="main-content" autoscroll="true" ng-view>
+  </div>
+  <footer id="footer">
+    <div class="border">
+      <div class="content">
+        <ul class="left-links">
+	  <li><a href='#about'>about</a></li>
+	  <li> <a href='#clients'>clients</a></li>
+	  <li> <a  href='#gallery'>gallery</a></li>
+	  <li> <a  href='#contact'>contact</a></li>
+	</ul>
+	<ul class="right-links">
+	  <li><a href="https://twitter.com/PTALA_" target="_blank"><img src="img/twitter.svg" /></a></li>
+	  <li><a href="http://vimeo.com/ptala" target="_blank"><img src="img/vimeo.svg" /></a></li>
+	  <li><a href="http://ptalamedia.tumblr.com/" target="_blank"><img src="img/tumblr.svg" /></a></li>
+	  <li><a href="http://instagram.com/ptala_" target="_blank"><img src="img/instagram.svg" /></a></li>
+	  <li><a href="https://www.facebook.com/AACRealty" target="_blank"><img src="img/facebook.svg" /></a></li>
+    	</ul>
+      </div>
+    </div>		
+    <img class="logo" src="img/footer_logo.png" />
+    <p id="copyright">&copy; copyright 2014 ptala</p>
+  </footer>
 
-	<script type="text/ng-template" id="home.html">
-		<div id="video-container" ng-class="{show: highlightVideoDisplay}">
-			<img src="img/close.png" id="close-video" ng-click="closeVideo()" />
-			<video ng-click="toggleVideo()" width="100%" height="" id="home-video">
-			  <source src="img/highlight-reel.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-			</video>
-		</div>
+  <script type="text/ng-template" id="home.html">
+    <div id="video-container" ng-class="{show: highlightVideoDisplay}">
+      <img src="img/close.png" id="close-video" ng-click="closeVideo()" />
+      <video ng-click="toggleVideo()" width="100%" height="" id="home-video">
+	<source src="img/highlight-reel.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+      </video>
+    </div>
 
-		<div class="home-top">
-			<div class="content">
-				<h3> our iconic properties.</h3>
-				<h1>your one-of-a kind experience.</h1>
-				<p ng-click="highlightVideo()" class="video-link"></p>
-				<p ng-click="more()" class="more"><span><img src="img/down_arrow.svg" /> more</span></p>
-			</div>	
-			<div id="hero">
-				<div class="overlay"></div>
-				<video autoplay width="100%" muted loop height="" >
-				  <source src="img/hero.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video>
-			</div>
-		</div>
+    <div class="home-top">
+      <div class="content">
+        <h3> our iconic properties.</h3>
+        <h1>your one-of-a kind experience.</h1>
+	<p ng-click="highlightVideo()" class="video-link"></p>
+	<p ng-click="more()" class="more"><span><img src="img/down_arrow.svg" /> more</span></p>
+      </div>	
+      <div id="hero">
+	<div class="overlay"></div>
+	<video autoplay width="100%" muted loop height="" >
+	  <source src="img/hero.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</video>
+      </div>
+    </div>
 
-		<div class="what-is">
-			<h2>what is ptala?</h2>
-			<div class="next-level">
-				<p class="main">Premier Tourist and Landmark Association specializes in the marketing of brands within iconic venues nationwide, including Washington DC’s nationally renowned Union Station, Faneuil Hall in the heart of downtown Boston, Harborplace lifestyle center and mall in Baltimore’s inner harbor, San Antonio’s unique Rivercenter mall on the famous Riverwalk, and The Bravern, in Seattle's highly sought after Bellevue neighborhood where the advertising opportunities are second to none.
-With a current reach in excess of one hundred million people per year, PTALA offers one of a kind experiences to any advertiser looking to truly dominate in any of our markets</p>
-				<ul>
-					<li>out-of-home executions</li>
-					<li> property take-overs</li>
-					<li>experiential events</li>
-					<li>pop-up stores</li>
-					<li>in-window executions</li>
-					<li>interactive displays</li>
-					<li>naming rights campaigns</li>
-					<li>large-scale event productions</li>
-				</ul>
-			</div>
-			<a class="learn-more" href='#about'>learn more about us <img src="img/link_arrow.svg" /></a>
-		</div>
-		<div class="clients">
-			<h2>our clients</h2>
-			<div class="inner">
-				<div class="client"><a href="#clients"><img src="img/client-logos/amazon_hover.svg" /></a></div>
-				<div class="client"><a href="#clients"><img src="img/client-logos/NFL_hover.svg" /></a></div>
-				<div class="client"><a href="#clients"><img src="img/client-logos/puma_hover.svg" /></a></div>
-				<div class="client"><a href="#clients"><img src="img/client-logos/celebrity_hover.svg" /></a></div>
-			</div>
-			<a class="learn-more" href='#clients'>see all clients and case studies <img src="img/link_arrow.svg" /></a>
-		</div>
-		</script>
+    <div class="what-is">
+      <h2>what is ptala?</h2>
+      <div class="next-level">
+        <p class="main">Premier Tourist and Landmark Association specializes in the marketing of brands within iconic venues nationwide, including Washington DC’s nationally renowned Union Station, Faneuil Hall in the heart of downtown Boston, Harborplace lifestyle center and mall in Baltimore’s inner harbor, San Antonio’s unique Rivercenter mall on the famous Riverwalk, and The Bravern, in Seattle's highly sought after Bellevue neighborhood where the advertising opportunities are second to none.
+With a current reach in excess of one hundred million people per year, PTALA offers one of a kind experiences to any advertiser looking to truly dominate in any of our markets
+        </p>
+        <ul>
+	  <li>out-of-home executions</li>
+	  <li> property take-overs</li>
+	  <li>experiential events</li>
+	  <li>pop-up stores</li>
+	  <li>in-window executions</li>
+	  <li>interactive displays</li>
+	  <li>naming rights campaigns</li>
+	  <li>large-scale event productions</li>
+	</ul>
+      </div>
+      <a class="learn-more" href='#about'>learn more about us <img src="img/link_arrow.svg" /></a>
+    </div>
+    <div class="clients">
+      <h2>our clients</h2>
+      <div class="inner">
+        <div class="client">
+          <a href="#clients"><img src="img/client-logos/amazon_hover.svg" /></a>
+        </div>
+	<div class="client">
+          <a href="#clients"><img src="img/client-logos/NFL_hover.svg" /></a>
+        </div>
+	<div class="client">
+          <a href="#clients"><img src="img/client-logos/puma_hover.svg" /></a>
+        </div>
+	<div class="client">
+          <a href="#clients"><img src="img/client-logos/celebrity_hover.svg" /></a>
+        </div>
+      </div>
+      <a class="learn-more" href='#clients'>see all clients and case studies <img src="img/link_arrow.svg" /></a>
+    </div>
+  </script>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js"></script>
-		<script type="text/javascript" src="js/lightbox/ui-bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/lightbox/loading-bar.js"></script>
-		<script type="text/javascript" src="js/lightbox/angular-bootstrap-lightbox.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
-		<script type="text/javascript" src="js/ScrollPosition.js"></script>
-		<script type="text/javascript" src="js/AppController.js"></script>
-		<script type="text/javascript" src="js/HomeController.js"></script>
-		<script type="text/javascript" src="js/AboutController.js"></script>
-		<script type="text/javascript" src="js/ClientsController.js"></script>
-		<script type="text/javascript" src="js/GalleryController.js"></script>
-		<script type="text/javascript" src="js/GalleryService.js"></script>
-		<script type="text/javascript" src="js/ContactController.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js"></script>
+  <script type="text/javascript" src="js/lightbox/ui-bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lightbox/loading-bar.js"></script>
+  <script type="text/javascript" src="js/lightbox/angular-bootstrap-lightbox.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/ScrollPosition.js"></script>
+  <script type="text/javascript" src="js/AppController.js"></script>
+  <script type="text/javascript" src="js/HomeController.js"></script>
+  <script type="text/javascript" src="js/AboutController.js"></script>
+  <script type="text/javascript" src="js/ClientsController.js"></script>
+  <script type="text/javascript" src="js/GalleryController.js"></script>
+  <script type="text/javascript" src="js/GalleryService.js"></script>
+  <script type="text/javascript" src="js/ContactController.js"></script>
 
-	</body>
+</body>
 
-	</html>
+</html>
+
