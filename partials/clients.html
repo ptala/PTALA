@@ -1,27 +1,32 @@
 <div id="clients-page">
 
-	<div class="video-container hide">
-		<div class="video-inner">
-			<h2>Past Clients Include</h2>
-			<h1 >{{ clients[openClient].name }}</h1>
-			
-		<iframe class="video" src="{{ getVimeoSource() }}" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		</div>
+  <div class="video-container hide">
+    <div class="video-inner">
+      <h2>Past Clients Include</h2>
+      <h1 >{{ clients[openClient].name }}</h1>
+      <iframe class="video" src="{{ getVimeoSource() }}" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+      </iframe>
+    </div>
 
-		<p ng-click="openClients() " class="hide openClients"><span><img src="img/down_arrow.svg"> click through our clients below</span></p>
-	</div>
-	<div class="filter">
-                <a ng-click="filters.category = 'Experiential Activations'">Experiential Activations</a>
-                <a ng-click="filters.category = 'OOH / Billboard Campaigns'">OOH / Billboard Campaigns</a>
-	</div>
-	<div class="logos">
-		<div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" ng-click="changeOpenClientTo($index)" ng-repeat="client in clients | filter:filters">
-			<img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img}}" />
-			<img ng-if="client.img != 'ravens.jpeg'" class="hover" src="img/client-logos/{{ client.img }}_default.svg" /> 
-			<img ng-if="client.img != 'ravens.jpeg'" class="default" src="img/client-logos/{{ client.img }}_hover.svg" /> 
-                        <!-- <a ng-click="filters.category = client.category">{{client.category}}</a> -->
-		</div>
-	</div>
+    <p ng-click="openClients() " class="hide openClients">
+      <span><img src="img/down_arrow.svg"> click through our clients below</span>
+    </p>
+  </div>
+  <div class="filter">
+  </div>
+  <div class="filter">
+    <a ng-click="filters.category = 'Experiential Activations'">Experiential Activations</a>
+    <a ng-click="filters.category = 'OOH / Billboard Campaigns'">OOH / Billboard Campaigns</a>
+  </div>
+  <div class="logos">
+    <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" ng-click="changeOpenClientTo($index)" ng-repeat="client in clients | filter:filters">
+      <img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img }}" />
+      <img ng-if="client.img != 'ravens.jpeg'" class="hover" src="img/client-logos/{{ client.img }}_default.svg" />
+      <img ng-if="client.img != 'ravens.jpeg'" class="default" src="img/client-logos/{{ client.img }}_hover.svg" />
+      <!-- <a ng-click="filters.category = client.category">{{client.category}}</a> -->
+    </div>
+  </div>
 
-	<a class="learn-more" href="#contact">Contact Us <img src="img/link_arrow.svg"></a>
+  <a class="learn-more" href="#contact">Contact Us <img src="img/link_arrow.svg"></a>
 </div>
+
