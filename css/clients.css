@@ -55,7 +55,8 @@
 }
 
 #clients-page .logos {	
-	width:960px;
+	//width:960px;
+	width: auto;
 	margin:0px auto;
 	margin-top:100px;
 	text-align:center;
@@ -95,10 +96,14 @@
 #Exp {
   float: left;
   width: 50%;
+  border-right: solid 1px #E4E4E4;
+  //outline: 1px solid #E4E4E4;
 }
 
 #OOH {
   float: right;
   width: 50%;
+  border-left: solid 1px #E4E4E4;
+  //outline: 1px solid #E4E4E4;
 }
 

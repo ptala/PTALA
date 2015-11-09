@@ -23,7 +23,7 @@
         <h2>
           {{ group.label }}
         </h2>
-          <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" ng-click="changeOpenClientTo($index)" ng-repeat="client in group.clients">
+          <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" ng-click="changeOpenClientTo(group.clients[$index])" ng-repeat="client in group.clients">
             <img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img}}" />
             <img ng-if="client.img != 'ravens.jpeg'" class="hover" src="img/client-logos/{{ client.img }}_default.svg" />
             <img ng-if="client.img != 'ravens.jpeg'" class="default" src="img/client-logos/{{ client.img }}_hover.svg" />
