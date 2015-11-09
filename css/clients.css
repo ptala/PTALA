@@ -91,3 +91,14 @@
 #clients-page .logos .logo.open  img.hover {
 	display:inline-block;
 }
+
+#Exp {
+  float: left;
+  width: 50%;
+}
+
+#OOH {
+  float: right;
+  width: 50%;
+}
+
