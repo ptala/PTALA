@@ -91,14 +91,14 @@
 	display:inline-block;
 }
 
-#EXP {
+div[id='Experiential Activations'] {
   float: left;
   width: 50%;
   border-right: solid 1px #E4E4E4;
   //outline: 1px solid #E4E4E4;
 }
 
-#OOH {
+div[id='OOH / Billboard Campaigns'] {
   float: right;
   width: 50%;
   //border-left: solid 1px #E4E4E4;

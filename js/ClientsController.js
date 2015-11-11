@@ -30,6 +30,7 @@ angular.module('ptala')
       var client = $scope.clients[ i ];
       if ( client[ attribute ] !== groupValue ) {
         var group = {
+                      id: client[ attribute ],
                       label: client[ attribute ],
                       clients: []
                     };
@@ -46,7 +47,8 @@ angular.module('ptala')
       img: "cambria",
       name:"Cambria",
       videoid:"126493347",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -54,7 +56,8 @@ angular.module('ptala')
       img: "nordstrom",
       name:"Nordstrom",
       videoid:"141869324",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -62,7 +65,8 @@ angular.module('ptala')
       img: "biogen",
       name:"Biogen",
       videoid:"124529350",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -70,7 +74,8 @@ angular.module('ptala')
       img: "cvs",
       name:"CVS Health",
       videoid:"127095096",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -78,7 +83,8 @@ angular.module('ptala')
       img: "qualcomm",
       name:"Qualcomm",
       videoid:"138404677",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -86,7 +92,8 @@ angular.module('ptala')
       img: "prudentialfinancial",
       name:"Prudential Financial",
       videoid:"139225422",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -94,7 +101,8 @@ angular.module('ptala')
       img: "smartcars",
       name:"Smart Cars",
       videoid:"140954435",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -102,7 +110,8 @@ angular.module('ptala')
       img: "dcl",
       name:"D.C. Lottery",
       videoid:"86116915",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -110,7 +119,8 @@ angular.module('ptala')
       img: "tropicana",
       name:"Tropicana",
       videoid:"59112441",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -118,7 +128,8 @@ angular.module('ptala')
       img: "philips",
       name:"Philips",
       videoid:"58926610",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -126,7 +137,8 @@ angular.module('ptala')
       img: "ravens.jpeg",
       name:"Baltimore Ravens",
       videoid:"59689251",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -134,7 +146,8 @@ angular.module('ptala')
       img: "todayshow",
       name:"The Today Show",
       videoid:"61678699",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -142,7 +155,8 @@ angular.module('ptala')
       img: "kelloggs",
       name:"Kelloggs",
       videoid:"61377575",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -150,7 +164,8 @@ angular.module('ptala')
       img: "redcross",
       name:"American Red Cross",
       videoid:"61467299",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -158,7 +173,8 @@ angular.module('ptala')
       img: "ncaa",
       name:"NCAA March Madness Event",
       videoid:"62256402",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -166,7 +182,8 @@ angular.module('ptala')
       img: "onedirection",
       name:"One Direction Pop-Up Store",
       videoid:"64068286",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -174,7 +191,8 @@ angular.module('ptala')
       img: "reuters",
       name:"Thomas Reuters",
       videoid:"70293547",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -182,7 +200,8 @@ angular.module('ptala')
       img: "redbull",
       name:"Redbull",
       videoid:"95929278",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -190,7 +209,8 @@ angular.module('ptala')
       img: "nintendo",
       name:"Nintendo Wii U Pop-Up",
       videoid:"72462204",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -198,7 +218,8 @@ angular.module('ptala')
       img: "puma",
       name:"PUMA",
       videoid:"88586782",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -206,7 +227,8 @@ angular.module('ptala')
       img: "amazon",
       name:"Amazon",
       videoid:"79524654",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -214,7 +236,8 @@ angular.module('ptala')
       img: "NFL",
       name:"NFL Kickoff",
       videoid:"74156380",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -222,7 +245,8 @@ angular.module('ptala')
       img: "oceanspray",
       name:"Ocean Spray Cranberry Event",
       videoid:"76912907",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -230,7 +254,8 @@ angular.module('ptala')
       img: "popsugar",
       name:"Pop Sugar",
       videoid:"96035818",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -238,7 +263,8 @@ angular.module('ptala')
       img: "celebrity",
       name:"Celebrity Cruises",
       videoid:"85039127",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -246,7 +272,8 @@ angular.module('ptala')
       img: "qatar",
       name:"Qatar",
       videoid:"87403972",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -254,7 +281,8 @@ angular.module('ptala')
       img: "celebrity",
       name:"Celebrity Cruises",
       videoid:"85039127",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -262,7 +290,8 @@ angular.module('ptala')
       img: "qatar",
       name:"Qatar",
       videoid:"87403972",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -270,7 +299,8 @@ angular.module('ptala')
       img: "nest",
       name:"Nest",
       videoid:"88535108",
-      category:"OOH",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
     },
     {
@@ -278,7 +308,8 @@ angular.module('ptala')
       img: "nespresso",
       name:"Nespresso",
       videoid:"88539916",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     },
     {
@@ -286,7 +317,8 @@ angular.module('ptala')
       img: "tazo",
       name:"Tazo Iced Tea Event",
       videoid:"100357105",
-      category:"EXP",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
       sequence:1
     }
   ]
@@ -301,10 +333,10 @@ angular.module('ptala')
     console.dir($scope.groups[0]);
     console.dir($scope.groups[1]);
     //console.dir($scope.groups[1].clients[index]);
-    console.dir(index.category)
+    console.dir(index.categoryID)
     console.dir(index.id)
     var temp = index.id;
-    //console.dir($scope.groups.indexOf[index.category].clients.indexOf[index.id]);
+    //console.dir($scope.groups.indexOf[index.categoryID].clients.indexOf[index.id]);
 
     console.dir(index);
     //var whichClient = indexOfId(clients, index);
