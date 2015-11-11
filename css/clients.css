@@ -55,13 +55,12 @@
 }
 
 #clients-page .logos {	
-	//width:960px;
-	width: auto;
+	width:960px;
+	//width: auto;
 	margin:0px auto;
 	margin-top:100px;
 	text-align:center;
 }
-
 
 #clients-page .logos .logo  {	
 	width: 190px;
@@ -72,7 +71,6 @@
 	line-height: 200px;
 	cursor:pointer;
 }
-
 
 #clients-page .logos .logo img  {	
 	vertical-align: middle;
@@ -93,7 +91,7 @@
 	display:inline-block;
 }
 
-#Exp {
+#EXP {
   float: left;
   width: 50%;
   border-right: solid 1px #E4E4E4;
@@ -103,7 +101,11 @@
 #OOH {
   float: right;
   width: 50%;
-  border-left: solid 1px #E4E4E4;
+  //border-left: solid 1px #E4E4E4;
   //outline: 1px solid #E4E4E4;
+}
+
+#groups-wrapper {
+  width: 100%;
 }
 
