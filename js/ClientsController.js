@@ -86,7 +86,7 @@ angular.module('ptala')
       img: "prudentialfinancial",
       name:"Prudential Financial",
       videoid:"139225422",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -94,7 +94,7 @@ angular.module('ptala')
       img: "smartcars",
       name:"Smart Cars",
       videoid:"140954435",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -118,7 +118,7 @@ angular.module('ptala')
       img: "philips",
       name:"Philips",
       videoid:"58926610",
-      category:"Exp",
+      category:"EXP",
       sequence:1
     },
     {
@@ -134,7 +134,7 @@ angular.module('ptala')
       img: "todayshow",
       name:"The Today Show",
       videoid:"61678699",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -142,7 +142,7 @@ angular.module('ptala')
       img: "kelloggs",
       name:"Kelloggs",
       videoid:"61377575",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -150,7 +150,7 @@ angular.module('ptala')
       img: "redcross",
       name:"American Red Cross",
       videoid:"61467299",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -158,7 +158,7 @@ angular.module('ptala')
       img: "ncaa",
       name:"NCAA March Madness Event",
       videoid:"62256402",
-      category:"Exp",
+      category:"EXP",
       sequence:1
     },
     {
@@ -166,7 +166,7 @@ angular.module('ptala')
       img: "onedirection",
       name:"One Direction Pop-Up Store",
       videoid:"64068286",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -190,15 +190,7 @@ angular.module('ptala')
       img: "nintendo",
       name:"Nintendo Wii U Pop-Up",
       videoid:"72462204",
-      category:"OOH",
-      sequence:1
-    },
-    {
-      id: 20,
-      img: "lv",
-      name:"Louis Vuiton",
-      videoid:"73313897",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -206,7 +198,7 @@ angular.module('ptala')
       img: "puma",
       name:"PUMA",
       videoid:"88586782",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -222,7 +214,7 @@ angular.module('ptala')
       img: "NFL",
       name:"NFL Kickoff",
       videoid:"74156380",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -230,7 +222,7 @@ angular.module('ptala')
       img: "oceanspray",
       name:"Ocean Spray Cranberry Event",
       videoid:"76912907",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -238,7 +230,23 @@ angular.module('ptala')
       img: "popsugar",
       name:"Pop Sugar",
       videoid:"96035818",
-      category:"OOH",
+      category:"EXP",
+      sequence:1
+    },
+    {
+      id: 26,
+      img: "celebrity",
+      name:"Celebrity Cruises",
+      videoid:"85039127",
+      category:"EXP",
+      sequence:1
+    },
+    {
+      id: 27,
+      img: "qatar",
+      name:"Qatar",
+      videoid:"87403972",
+      category:"EXP",
       sequence:1
     },
     {
@@ -270,7 +278,7 @@ angular.module('ptala')
       img: "nespresso",
       name:"Nespresso",
       videoid:"88539916",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     },
     {
@@ -278,7 +286,7 @@ angular.module('ptala')
       img: "tazo",
       name:"Tazo Iced Tea Event",
       videoid:"100357105",
-      category:"OOH",
+      category:"EXP",
       sequence:1
     }
   ]
