@@ -356,6 +356,15 @@ angular.module('ptala')
       categoryID:"EXP",
       categoryDesc:"Experiential Activations",
       sequence:1
+    },
+    {
+      id: 35,
+      img: "t-mobile",
+      name:"T-Mobile",
+      videoid:"128732374",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
+      sequence:1
     }
   ]
   
