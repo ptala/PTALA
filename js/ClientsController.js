@@ -329,6 +329,15 @@ angular.module('ptala')
       categoryID:"OOH",
       categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
+    },
+    {
+      id: 32,
+      img: "ifc",
+      name:"IFC",
+      videoid:"112414122",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
+      sequence:1
     }
   ]
   
