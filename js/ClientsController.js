@@ -347,6 +347,15 @@ angular.module('ptala')
       categoryID:"OOH",
       categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
+    },
+    {
+      id: 34,
+      img: "utz",
+      name:"Utz",
+      videoid:"122551435",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
+      sequence:1
     }
   ]
   
