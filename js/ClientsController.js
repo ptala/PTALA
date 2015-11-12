@@ -404,23 +404,21 @@ angular.module('ptala')
     //}
   };
 	
-/*
   $scope.getVimeoSource = function() {
     return $sce.trustAsResourceUrl("http://player.vimeo.com/video/" + 
                                    $scope.clients[$scope.openClient].videoid  + 
                                    "?title=0&amp;byline=0&amp;portrait=0");
-    };
-*/
-
-  $scope.getVimeoSource = function() {
-    return $sce.trustAsResourceUrl("http://player.vimeo.com/video/" + 
-                                   $scope.clients[$scope.openClient].videoid  + 
-                                   "?title=0&amp;byline=0&amp;portrait=0");
-    };
+  };
 
   $scope.openClients = function() {
     $("html, body").animate({ scrollTop: $('.logos').position().top + 'px' });
   };
 
+  function init() {
+    console.log("Called init function for client controller.");
+    $scope.groupBy('categoryDesc');
+  };
+
+  init();
 });
 
