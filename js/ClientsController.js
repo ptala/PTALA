@@ -365,6 +365,15 @@ angular.module('ptala')
       categoryID:"EXP",
       categoryDesc:"Experiential Activations",
       sequence:1
+    },
+    {
+      id: 36,
+      img: "uniqlo",
+      name:"Uniqlo",
+      videoid:"142638589",
+      categoryID:"EXP",
+      categoryDesc:"Experiential Activations",
+      sequence:1
     }
   ]
   
