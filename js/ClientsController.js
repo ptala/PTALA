@@ -338,6 +338,15 @@ angular.module('ptala')
       categoryID:"OOH",
       categoryDesc:"OOH / Billboard Campaigns",
       sequence:1
+    },
+    {
+      id: 33,
+      img: "metlife",
+      name:"Metlife",
+      videoid:"126493590",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
+      sequence:1
     }
   ]
   
