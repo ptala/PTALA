@@ -320,6 +320,15 @@ angular.module('ptala')
       categoryID:"EXP",
       categoryDesc:"Experiential Activations",
       sequence:1
+    },
+    {
+      id: 31,
+      img: "xfinity",
+      name:"Xfinity",
+      videoid:"108172173",
+      categoryID:"OOH",
+      categoryDesc:"OOH / Billboard Campaigns",
+      sequence:1
     }
   ]
   
