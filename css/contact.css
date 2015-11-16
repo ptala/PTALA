@@ -5,11 +5,17 @@
 
 #contact .map {
 	width: 100%;
+	height: 403px;
 	text-align: center;
 	position: relative;
 	float: left;
-	height: 403px;
 	overflow:hidden;
+}
+
+.gm-style-iw {
+   color: #ff704d;
+   weight: bold;
+   border-radius: 2px 2px 0 0;
 }
 
 #contact .mapImage {
@@ -77,14 +83,4 @@
 	width:40%;
 	text-align:center;
 }
-
-
-#map {
-  width: 80%;
-  height: 403px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #CCC;
-}
-
 

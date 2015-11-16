@@ -6,20 +6,27 @@ angular.module('ptala')
     var myLatlng = new google.maps.LatLng(40.763724,-73.970887);
     var mapOptions = {
       center: myLatlng,
-      zoom: 18,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      zoom: 17,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scrollwheel:  false,
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        label: 'PTALA',
-        title: 'PTALA',
         optimized: false,
         animation: google.maps.Animation.DROP
     });
     marker.setMap(map);
-    //marker.setValues({ map: map, label: "PTALA" });
+
+    var infowindow = new google.maps.InfoWindow({
+     content:"Ptala <br /> 635 Madison Avenue"
+    });
+    infowindow.open(map,marker);
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
   };
 
   angular.element(document).ready(function () {
