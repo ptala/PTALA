@@ -20,7 +20,7 @@ angular.module('ptala')
     marker.setMap(map);
 
     var infowindow = new google.maps.InfoWindow({
-     content:"Ptala <br /> 635 Madison Avenue"
+     content:"PTALA <br /> 635 Madison Avenue"
     });
     infowindow.open(map,marker);
 
