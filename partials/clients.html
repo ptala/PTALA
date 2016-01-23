@@ -19,23 +19,30 @@
       <!-- <a ng-click="groupBy( 'location' )">Location</a> -->
     </p>
     <div id="groups-wrapper">
-      <div ng-repeat="group in groups">
-        <div id="{{ group.label }}">
-          <h2>
-            {{ group.label }}
-          </h2>
-          <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" 
-                            ng-click="changeOpenClientTo(group.clients[$index])" 
-                            ng-repeat="client in group.clients">
-            <img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img}}" />
-            <img ng-if="client.img != 'ravens.jpeg'" 
-                 class="hover" src="img/client-logos/{{ client.img }}_default.svg" />
-            <img ng-if="client.img != 'ravens.jpeg'" 
-                 class="default" src="img/client-logos/{{ client.img }}_hover.svg" />
+      <div class="container-fluid">
+        <div class="row">
+          <div ng-repeat="group in groups">
+            <div class="col-md-6 hover-column{{ group.id }}">
+              <div id="{{ group.label }}">
+                <h2>
+                  {{ group.label }}
+                </h2>
+                <div class="logo" ng-class="{open: (clients[openClient].name == client.name)}" 
+                                  ng-click="changeOpenClientTo(group.clients[$index])" 
+                                  ng-repeat="client in group.clients">
+                  <img ng-if="client.img == 'ravens.jpeg'" src="img/client-logos/{{ client.img}}" />
+                  <img ng-if="client.img != 'ravens.jpeg'" 
+                       class="hover" src="img/client-logos/{{ client.img }}_default.svg" />
+                  <img ng-if="client.img != 'ravens.jpeg'" 
+                       class="default" src="img/client-logos/{{ client.img }}_hover.svg" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+      
     <a class="learn-more" href="#contact">Contact Us <img src="img/link_arrow.svg"></a>
 </div>
 

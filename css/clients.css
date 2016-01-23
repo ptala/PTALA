@@ -109,3 +109,12 @@ div[id='OOH / Billboard Campaigns'] {
   width: 100%;
 }
 
+.hover-column-OUT:hover {
+  //background-color: #dcdcdc;
+  border-left: solid 1px #ebebe0;
+}
+
+.hover-column-EXP {
+  border-right: solid 2px #ebebe0;
+}
+

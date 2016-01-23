@@ -30,7 +30,7 @@ angular.module('ptala')
       var client = $scope.clients[ i ];
       if ( client[ attribute ] !== groupValue ) {
         var group = {
-                      id: client[ attribute ],
+                      id: "-" + client[ attribute ].slice(0,3),
                       label: client[ attribute ],
                       clients: []
                     };
@@ -48,7 +48,7 @@ angular.module('ptala')
       name:"Cambria",
       videoid:"126493347",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -57,7 +57,7 @@ angular.module('ptala')
       name:"Nordstrom",
       videoid:"141869324",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -66,7 +66,7 @@ angular.module('ptala')
       name:"Biogen",
       videoid:"124529350",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -75,7 +75,7 @@ angular.module('ptala')
       name:"CVS Health",
       videoid:"127095096",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -84,7 +84,7 @@ angular.module('ptala')
       name:"Qualcomm",
       videoid:"138404677",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -93,7 +93,7 @@ angular.module('ptala')
       name:"Prudential Financial",
       videoid:"139225422",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -102,7 +102,7 @@ angular.module('ptala')
       name:"Smart Cars",
       videoid:"140954435",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -111,7 +111,7 @@ angular.module('ptala')
       name:"D.C. Lottery",
       videoid:"86116915",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -120,7 +120,7 @@ angular.module('ptala')
       name:"Tropicana",
       videoid:"59112441",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -129,7 +129,7 @@ angular.module('ptala')
       name:"Philips",
       videoid:"58926610",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -138,7 +138,7 @@ angular.module('ptala')
       name:"Baltimore Ravens",
       videoid:"59689251",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -147,7 +147,7 @@ angular.module('ptala')
       name:"The Today Show",
       videoid:"61678699",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -156,7 +156,7 @@ angular.module('ptala')
       name:"Kelloggs",
       videoid:"61377575",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -165,7 +165,7 @@ angular.module('ptala')
       name:"American Red Cross",
       videoid:"61467299",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -174,7 +174,7 @@ angular.module('ptala')
       name:"NCAA March Madness Event",
       videoid:"62256402",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -183,7 +183,7 @@ angular.module('ptala')
       name:"One Direction Pop-Up Store",
       videoid:"64068286",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -192,7 +192,7 @@ angular.module('ptala')
       name:"Thomas Reuters",
       videoid:"70293547",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -201,7 +201,7 @@ angular.module('ptala')
       name:"Redbull",
       videoid:"95929278",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -210,7 +210,7 @@ angular.module('ptala')
       name:"Nintendo Wii U Pop-Up",
       videoid:"72462204",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -219,7 +219,7 @@ angular.module('ptala')
       name:"PUMA",
       videoid:"88586782",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -228,7 +228,7 @@ angular.module('ptala')
       name:"Amazon",
       videoid:"79524654",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -237,7 +237,7 @@ angular.module('ptala')
       name:"NFL Kickoff",
       videoid:"74156380",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -246,7 +246,7 @@ angular.module('ptala')
       name:"Ocean Spray Cranberry Event",
       videoid:"76912907",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -255,7 +255,7 @@ angular.module('ptala')
       name:"Pop Sugar",
       videoid:"96035818",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -264,7 +264,7 @@ angular.module('ptala')
       name:"Celebrity Cruises",
       videoid:"85039127",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -273,7 +273,7 @@ angular.module('ptala')
       name:"Qatar",
       videoid:"87403972",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -282,7 +282,7 @@ angular.module('ptala')
       name:"Celebrity Cruises",
       videoid:"85039127",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -291,7 +291,7 @@ angular.module('ptala')
       name:"Qatar",
       videoid:"87403972",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -300,7 +300,7 @@ angular.module('ptala')
       name:"Nest",
       videoid:"88535108",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -309,7 +309,7 @@ angular.module('ptala')
       name:"Nespresso",
       videoid:"88539916",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -318,7 +318,7 @@ angular.module('ptala')
       name:"Tazo Iced Tea Event",
       videoid:"100357105",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -327,7 +327,7 @@ angular.module('ptala')
       name:"Xfinity",
       videoid:"108172173",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -336,7 +336,7 @@ angular.module('ptala')
       name:"IFC",
       videoid:"112414122",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -345,7 +345,7 @@ angular.module('ptala')
       name:"Metlife",
       videoid:"126493590",
       categoryID:"OOH",
-      categoryDesc:"OOH / Billboard Campaigns",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
     },
     {
@@ -354,7 +354,7 @@ angular.module('ptala')
       name:"Utz",
       videoid:"122551435",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -363,7 +363,7 @@ angular.module('ptala')
       name:"T-Mobile",
       videoid:"128732374",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     },
     {
@@ -372,7 +372,7 @@ angular.module('ptala')
       name:"Uniqlo",
       videoid:"142638589",
       categoryID:"EXP",
-      categoryDesc:"Experiential Activations",
+      categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
     }
   ]
