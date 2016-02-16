@@ -374,6 +374,15 @@ angular.module('ptala')
       categoryID:"EXP",
       categoryDesc:"EXPERIENTIAL ACTIVATIONS",
       sequence:1
+    },
+    {
+      id: 37,
+      img: "walgreens",
+      name:"Walgreens",
+      videoid:"151036721",
+      categoryID:"OOH",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
+      sequence:1
     }
   ]
   
