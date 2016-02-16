@@ -8,7 +8,7 @@ angular.module('ptala')
 		};	
 		
 		$scope.openVenueSlide = function(index) {
-			if(index == 6) {
+			if(index == 7) {
 				index = 0;
 			} else if (index == -1) {
 				index = 5;
@@ -74,6 +74,12 @@ angular.module('ptala')
 				location: 'Seattle',
 				image: 'bravern.jpg',
 				text: "Located in the Bellevue area of Seattle, which is commonly referred to as the 'Beverly Hills' of the Pacific Northwest, the Shops at the Bravern is a luxury retail center with a focused mix of luxury retail, office, and residential space.  Two large office towers on the property house a captive audience of over 40,000 highly skilled Microsoft employees, and over 450 luxury residences sit atop the property.  The Meydenbauer Convention Center, also located at the Bravern, sees over 250,000 annual visitors."
+			},
+			{	
+				title: 'Bayside Marketplace',
+				location: 'Miami',
+				image: 'bayside_marketplace.jpg',
+				text: "Bayside Marketplace is the most visited destination in Miami, welcoming approximately 24 million visitors annually. It is located directly adjacent to the American Airlines Arena (home to the Miami Heat), Bayfront Park (home to major Miami programming and events like Ultra Music Festival and the New Years Celebration) and the Port Miami, which is the most visited cruise ship terminal in the world. Bayside is a two-level, open-air center with over 140 stores, shops and restaurants, including national and regional merchants. Bayside also plays host to nightly musical performances, and hosts the Miami Walk of Fame, which celebrates Hispanic contributions to the world of TV and Film."
 			}
 
 		];	
@@ -168,4 +174,4 @@ angular.module('ptala')
         });
 
 		
-	});
+});
