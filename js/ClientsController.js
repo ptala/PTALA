@@ -383,6 +383,15 @@ angular.module('ptala')
       categoryID:"OOH",
       categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
       sequence:1
+    },
+    {
+      id: 38,
+      img: "deerpark",
+      name:"Deer Park Water",
+      videoid:"147853244",
+      categoryID:"OOH",
+      categoryDesc:"OUT OF HOME MEDIA CAMPAIGNS",
+      sequence:1
     }
   ]
   
