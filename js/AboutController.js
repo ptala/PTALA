@@ -80,6 +80,18 @@ angular.module('ptala')
 				location: 'Miami',
 				image: 'bayside_marketplace.jpg',
 				text: "Bayside Marketplace is the most visited destination in Miami, welcoming approximately 24 million visitors annually. It is located directly adjacent to the American Airlines Arena (home to the Miami Heat), Bayfront Park (home to major Miami programming and events like Ultra Music Festival and the New Years Celebration) and the Port Miami, which is the most visited cruise ship terminal in the world. Bayside is a two-level, open-air center with over 140 stores, shops and restaurants, including national and regional merchants. Bayside also plays host to nightly musical performances, and hosts the Miami Walk of Fame, which celebrates Hispanic contributions to the world of TV and Film."
+			},
+			{	
+				title: ' ',
+				location: ' ',
+				image: 'filler.png',
+				text: " "
+			},
+			{	
+				title: ' ',
+				location: ' ',
+				image: 'filler.png',
+				text: " "
 			}
 
 		];	
